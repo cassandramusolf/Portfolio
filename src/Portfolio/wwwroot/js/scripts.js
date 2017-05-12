@@ -13,11 +13,12 @@
     });
 
 
-
 $('.title').typeIt({
-    strings: 'Cassandra Musolf.',
-    speed: 50,
-    autoStart: true
+    strings: 'Junior Web Developer',
+    speed: 100,
+    autoStart: true,
+    breakLines: true,
+    cursor: false
 });
 
 });
