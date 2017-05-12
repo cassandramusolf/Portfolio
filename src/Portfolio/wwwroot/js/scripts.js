@@ -11,4 +11,13 @@
             }
         }
     });
+
+
+
+$('.title').typeIt({
+    strings: 'Cassandra Musolf.',
+    speed: 50,
+    autoStart: true
+});
+
 });
