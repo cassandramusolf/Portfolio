@@ -211,6 +211,7 @@
 --resource:"C:\Users\Cassie\Desktop\Portfolio\src\Portfolio\obj\Debug\netcoreapp1.0\Portfoliodotnet-compile.deps.json",Portfolio.deps.json
 C:\Users\Cassie\Desktop\Portfolio\src\Portfolio\Program.cs
 C:\Users\Cassie\Desktop\Portfolio\src\Portfolio\Startup.cs
-C:\Users\Cassie\Desktop\Portfolio\src\Portfolio\Controllers\GithubController.cs
 C:\Users\Cassie\Desktop\Portfolio\src\Portfolio\Controllers\HomeController.cs
+C:\Users\Cassie\Desktop\Portfolio\src\Portfolio\Controllers\ProjectController.cs
 C:\Users\Cassie\Desktop\Portfolio\src\Portfolio\Models\PortfolioDbContext.cs
+C:\Users\Cassie\Desktop\Portfolio\src\Portfolio\Models\Project.cs

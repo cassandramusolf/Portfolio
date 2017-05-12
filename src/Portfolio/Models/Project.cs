@@ -20,7 +20,7 @@ namespace Portfolio.Models
         public static List<Project> GetProjects()
         {
             var client = new RestClient("https://api.github.com/");
-            var request = new RestRequest("https://api.github.com/users/cassandramusolf/repos", Method.GET);
+            var request = new RestRequest("users/cassandramusolf/repos", Method.GET);
 
             var response = new RestResponse();
             Task.Run(async () =>
@@ -28,10 +28,9 @@ namespace Portfolio.Models
                 response = await GetResponseContentAsync(client, request) as RestResponse;
             }).Wait();
             JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(response.Content);
-            string jsonOutput = jsonResponse["repos"].ToString();
-            //Console.WriteLine(jsonOutput);
+            string jsonOutput = jsonResponse["projects"].ToString();
+            Console.WriteLine(response.Content);
             var projectList = JsonConvert.DeserializeObject<List<Project>>(jsonOutput);
-            Console.WriteLine(projectList[0].Name);
             return projectList;
         }
         public static Task<IRestResponse> GetResponseContentAsync(RestClient theClient, RestRequest theRequest)
