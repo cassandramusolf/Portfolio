@@ -1,17 +1,41 @@
-﻿.jumbotron {
+﻿body {
+    font-family: 'Raleway', sans-serif;
 }
 
+.navbar {
+    background-color: white;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: forestgreen;
+}
+
+.nav-pills {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.jumbotron {
+    background-color: white;
+}
+
+
 .section2 {
-    margin-top: -70px;
-    height: 500px;
-    background-color: dimgrey;
+    margin-top: -20px;
+    height: 200px;
 }
 
 .section3 {
     height: 500px;
+
 }
 
 .section4 {
+    margin-top: -30px;
     height: 500px;
 }
 
@@ -26,13 +50,12 @@
   padding-top: 60px;
   width: 100%;
   width: 100vw;
-
-background: #000000; 
-background: -webkit-linear-gradient(to right, #434343, #000000); 
-background: linear-gradient(to right, #434343, #000000); 
-
-    color : #fff;    
+  background: #000000; 
+  background: -webkit-linear-gradient(to right, #434343, #000000); 
+  background: linear-gradient(to right, #434343, #000000); 
+  color : #fff;    
 }
+
 .contact-section{
   padding-top: 40px;
 }
@@ -47,15 +70,18 @@ background: linear-gradient(to right, #434343, #000000);
 .form-group{
   margin-top: 10px;
 }
+
 label{
   font-size: 1.3em;
   line-height: 1em;
   font-weight: normal;
 }
+
 .form-control{
   font-size: 1.3em;
   color: #080808;
 }
+
 textarea.form-control {
     height: 135px;
    /* margin-top: px;*/
@@ -71,8 +97,7 @@ textarea.form-control {
 
 .col-md-4 {
     padding: 30px;
-    box-shadow: 2px 2px 2px grey;
-    height: 272px;
+    height: 200px;
 }
 
 .about-text {
@@ -81,6 +106,37 @@ textarea.form-control {
 
 @media (max-width: 992px) {
   .section4 {
-    height: 1000px;
+    height: 900px;
   }
+}
+
+@media (max-width: 768px) {
+    .jumbotron {
+        margin-top: 300px;
+    }
+}
+
+.name {
+    font-size: 60px;
+}
+
+.fa {
+    padding-right: 10px;
+}
+
+.btn:hover {
+    color: forestgreen;
+    background-color: white;
+    font-weight: bold;
+    -webkit-transform:scale(1.20);
+    transition: all 0.5s ease;
+}
+
+.title {
+    color: forestgreen;
+    font-size: 40px;
+}
+
+i {
+    display: inline-block;
 }

@@ -3,14 +3,11 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="jumbotron text-center">
-    <img class="img-responsive" src="~/images/blackwhite.png" />
-
-</div>
-
-
 <div>
 
+    <div class="jumbotron text-center">
+        <img class="img-responsive comp-img" src="~/images/blackwhite.png" />
+    </div>
     <div class="section2 text-center">
         <div class="container">
             <h1 class="name">CASSANDRA MUSOLF</h1>
@@ -18,9 +15,9 @@
         </div>
     </div>
 
-    <div id="about" class="section3">
+    <div  id="about" class="section3">
         <div class="container">
-            <h1 class="about-title text-left">ABOUT ME</h1>
+            <h1  class="about-title text-left">ABOUT ME</h1>
             <hr />
             <div class="col-md-2">
             </div>
@@ -43,7 +40,11 @@
 
     <div id="contact" class="section5">
         <div class="container">
-            <h1 class="contact-title text-left">CONTACT ME.</h1>
+            <div class="contact-title text-left">
+                <h1>CONTACT ME</h1>
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+            </div>
             <hr />
             <h3 class="contact-form text-center">Are you interested in working together? Contact me.</h3>
             <form>
@@ -65,7 +66,6 @@
                     <div>
                         <button type="button" class="btn btn-default btn-lg submit">Send Message</button>
                     </div>
-
                 </div>
         </form>
         </div>

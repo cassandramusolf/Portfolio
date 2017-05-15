@@ -7,7 +7,7 @@
         success: function (projects) {
             for (var i = 0; i <= 3; i++) {
                 $('.projects').append('<div class=col-md-4>' + '<h2 class="project-name">' + projects[i].name.toUpperCase() + ' <br> <br>'  + projects[i].stargazers_count + ' Star </h2>' + '<br>' +
-                '<a href="' + projects[i].html_url + '">' + 'View Project Here' + '</a>' + '</div>');
+                '<a class="btn btn-lg btn-default" href="' + projects[i].html_url + '">' + 'View Project Here' + '</a>' + '</div>' + '</hr>');
             }
         }
     });
